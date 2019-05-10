@@ -13,5 +13,18 @@ libs.forEach((nlp, i) => {
   var r = nlp('John and Joe walked to the store');
   assert(r.people().data().length === 2);
   assert(r.verbs().data().length === 1);
+  
+  var rr = nlp('Morin Gontran');
+  assert(rr.people().data().length === 1);
+  assert(rr.people().data()[0].firstName === "gontran");
+  assert(rr.people().data()[0].lastName === "morin");
+  assert(rr.people().data()[0].genderGuess === "Male");
+
+  var rrr = nlp('Boily Micheline');
+  assert(rrr.people().data().length === 1);
+  assert(rrr.people().data()[0].firstName === "micheline");
+  assert(rrr.people().data()[0].lastName === "boily");
+  assert(rrr.people().data()[0].genderGuess === "Female");
+
 });
 console.log(chalk.green('\n  👍'));
