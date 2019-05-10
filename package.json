@@ -1,14 +1,14 @@
 {
-  "author": "Spencer Kelly <spencermountain@gmail.com> (http://spencermounta.in)",
-  "name": "compromise",
-  "description": "natural language processing in the browser",
-  "version": "11.13.2",
+  "author": "Edouard Boily <edouard.boily@gmail.com>",
+  "name": "compromise-quebec",
+  "description": "natural language processing adapted for Quebec names",
+  "version": "1.0.0",
   "main": "./builds/compromise.js",
   "unpkg": "./builds/compromise.min.js",
   "types": "./compromise.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nlp-compromise/compromise.git"
+    "url": "git://github.com/eboily/compromise.git"
   },
   "scripts": {
     "test": "tape \"./test/unit/**/*.test.js\" | tap-dancer",
