@@ -6,7 +6,7 @@ test('people:', function(t) {
   var arr = doc.people().out('array');
   t.deepEqual(arr, ['mary', 'nancy', 'fred', 'jack'], 'people-easy');
 
-  doc = nlp('jean jacket. jean Slkje');
+  doc = nlp('jean Slkje wears jeans and glasses');
   arr = doc.people().out('array');
   t.deepEqual(arr, ['jean slkje'], 'people-context');
 

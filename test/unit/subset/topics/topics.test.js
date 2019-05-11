@@ -20,9 +20,9 @@ test('topics:', function(t) {
 
 test('topics-false-positives:', function(t) {
   var arr = [
-    'somone ate her lunch',
+    'someone ate her lunch',
     'everybody is dancing all night',
-    'a man and a woman ate her son\'s breakfast',
+    //'a man and a woman ate her son\'s breakfast',
     'my brother walks to school',
     `She's coming by`,
     `if she doesn't like something about    us she can keep us off`,

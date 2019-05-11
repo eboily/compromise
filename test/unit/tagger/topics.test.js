@@ -7,7 +7,7 @@ test('proper-nouns', function(t) {
     ['Toronto and Vancouver Canada.', ['toronto', 'vancouver canada']],
     ['we ate shellfish at 23 Main st.', []],
     ['google is suing motorola inc.', ['google', 'motorola inc']],
-    ['the doctor and his brother see the mayor of france', ['france']],
+    ['the doctor and his brother see the mayor of germany', ['germany']],
   ];
   arr.forEach((a) => {
     var out = nlp(a[0]).match('#ProperNoun+').out('array');
