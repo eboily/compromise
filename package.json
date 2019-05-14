@@ -2,7 +2,7 @@
   "author": "Edouard Boily <edouard.boily@gmail.com>",
   "name": "compromise-quebec",
   "description": "natural language processing adapted for Quebec names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./builds/compromise.js",
   "unpkg": "./builds/compromise.min.js",
   "types": "./compromise.d.ts",

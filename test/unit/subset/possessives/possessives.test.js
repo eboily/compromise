@@ -3,9 +3,9 @@ var nlp = require('../../lib/nlp');
 
 test('possessives tagger', function(t) {
   var arr = [
-    `Spencer's`,
-    `Spencer Kelly's`,
-    `Spencer C. Kelly's`,
+    `Zoey's`,
+    `Zoey Villeneuve's`,
+    `Zoey C. Villeneuve's`,
     `Union Corp's`,
     `Los Angeles's`,
   ];

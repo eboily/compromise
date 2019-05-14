@@ -69,16 +69,16 @@ test('adjusted lexicon:', function(t) {
   });
   //
   //set gender from lexicon
-  var terms = nlp('Kelly', lexicon);
+  var terms = nlp('Victoria', lexicon);
   pos_test(terms, ['FemaleName'], t);
   //set as male:
   lexicon = {
-    kelly: 'MaleName'
+    victoria: 'MaleName'
   };
-  terms = nlp('Kelly', lexicon);
+  terms = nlp('Victoria', lexicon);
   pos_test(terms, ['MaleName'], t);
   //gender follows lumping
-  terms = nlp('Kelly Gruber', lexicon);
+  terms = nlp('Victoria Gruber', lexicon);
   pos_test(terms, ['MaleName', 'LastName'], t);
 
   t.end();
